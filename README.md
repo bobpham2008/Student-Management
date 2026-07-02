@@ -8,3 +8,11 @@ A simple Student Management System.
 - Learn Python
 - Learn Data Structures
 - Practice Object-Oriented Programming
+
+## Student Structure
+
+Student
+
+- ID
+- Name
+- Score
