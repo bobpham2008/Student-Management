@@ -3,10 +3,17 @@ def add_student():
   print("Student:", student_name)
 
 while True:
-  add_student()
-  choice = input("Continue? (y/n):")
+  print("\n===== STUDENT MANAGEMENT =====")
+  print("1. Add Student")
+  print("0. Exit")
   
-  if choice.lower() == "n":
+  choice = input("Choose:")
+  if choice == "1":
+    add_student()
+  elif choice == "0":
     print("Goodbye!")
     break
     
+  else:
+    print("Invalid choice. Please try again.")
+  
