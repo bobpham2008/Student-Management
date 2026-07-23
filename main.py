@@ -1,10 +1,16 @@
 def add_student():
-  student_name = input("Enter student name: ")
-  student_name = student_name.strip().title()
-  students_list.append(student_name)
+  student_id = input("Enter student ID: ").strip().upper()
+  student_name = input("Enter student name:").strip().title()
+  student_score = float(input("Enter student score:"))
+  student = [
+    student_id,
+    student_name,
+    student_score
+  ]
+  students_list.append(student)
   print("Student added successfully!")
 
-def show_students():
+def view_students():
   print("\n===== STUDENT LIST =====")
   
   if len(students_list) == 0:
@@ -12,7 +18,11 @@ def show_students():
     return
     
     for student in students_list:
-      print(Student)
+      print(
+        f"ID: {student[0]} | "
+        f"Name: {student[1]} | "
+        f"Score: {student[2]}"
+      )
       
 while True:
   print("\n===== STUDENT MANAGEMENT =====")
